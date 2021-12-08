@@ -1,0 +1,14 @@
+.card {
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 100px;
+    margin: 5px;
+    width: 100px;
+    overflow: hidden;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
