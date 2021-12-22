@@ -9,7 +9,7 @@ export const AddCategory = ({setCategories}) => {
 
     const handleInputChange = (e) => setInputValue(e.target.value);
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // se usa para que no se recargue la pagina al ejecutar el submit
         if (inputValue.trim().length > 2) {
             setCategories(ctgs=>[inputValue, ...ctgs]);
             setInputValue('');
@@ -24,6 +24,7 @@ export const AddCategory = ({setCategories}) => {
                     value={inputValue}
                     onChange={handleInputChange}
                 ></input>
+                <p>{inputValue}</p>
             </form>
         </>
     )

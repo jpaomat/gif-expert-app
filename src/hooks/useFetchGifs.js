@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { getGifs } from "../services/getGifs";
 
-export const useFetchGifs = (category) => {
+export const useFetchGifs = (category) => {   //custom hook
     const [state, setstate] = useState({
         data: [],
         loading: true
